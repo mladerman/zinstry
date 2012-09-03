@@ -27,7 +27,7 @@ function scrolling(id)
 
 function collapse(id,duration){
 	$("#"+id).click(function(){
-		$("#contact").toggleClass("collapsed",duration);
+		$("#contact").toggleClass("collapsed",duration)
 		$("#"+id).children().toggleClass("icon-minus-sign");
 		$("#"+id).children().toggleClass("icon-plus-sign");
 		$("#contact h3").toggle()

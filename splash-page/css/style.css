@@ -8,6 +8,28 @@ html,body{
   background:url(../img/lightpaperfibers.png);
 }
 
+#cover-photo{
+  margin-top:-1.5%;
+  padding:12%;
+  color:#f0f0f0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border-bottom:1px solid #3f3f3f;
+
+  background:url(../img/happy_people.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+#how-does-it-work{
+  background:url(../img/bgnoise_lg.png);
+  
+}
 .nav-collapse{
 	float:right;
 }
@@ -38,6 +60,7 @@ border-bottom: #AAA;
 
 #contact{
   position:fixed;
+  top:20%;
   right:0px;
   z-index:100000;
   border:3px solid #aaaaaa;
