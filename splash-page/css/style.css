@@ -4,6 +4,10 @@
    Author:
    ========================================================================== */
 
+html,body{
+  background:url(../img/lightpaperfibers.png);
+}
+
 .nav-collapse{
 	float:right;
 }
@@ -22,8 +26,7 @@ border-bottom: #AAA;
 }
 
 
-.footer 
-{
+.footer {
     position: relative;
 	/*margin-top: -150px;  negative value of footer height */
 	min-height: 150px;
@@ -33,6 +36,36 @@ border-bottom: #AAA;
     margin-bottom:-40px;
 } 
 
+#contact{
+  position:fixed;
+  right:0px;
+  z-index:100000;
+  border:3px solid #aaaaaa;
+  border-right:0px;
+  padding:8px;
+  padding-right:0px;
+  background:#dddddd;
+}
+
+#contact-button{
+  position:absolute;
+  left:0em;
+  font-size:26px;
+}
+
+#contact-button:hover{
+  opacity:.7;
+
+}
+#foot{
+  background-color:#c2c2c2;
+
+}
+
+.collapsed{
+  overflow:visible;
+  width:1.5%;
+}
 /*div{
 	border:1px solid;
 }*/

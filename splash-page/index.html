@@ -21,21 +21,25 @@
 	}
 	</style>
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+
 
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
 <!-- scripts concatenated and minified via ant build script-->
-<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/spin.min.js"></script>
 
 
-<script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 <!-- end scripts-->
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<body id="home" data-spy="scroll" data-target="#navbar" data-offset="50">
 <div id="wrapper"><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     <div id="navbar" class="navbar navbar-fixed-top">
@@ -86,6 +90,30 @@
         </div>  
       </div>
       
+      <div id="contact" class="span3 hidden-phone collapsed">
+        <div class="span3">
+          <form id="contact-form">
+          <legend>Have a Question for Us?</legend>
+            
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Name Goes Here">
+              <label>Email</label>
+              <div id="contact-button">
+                <i class="icon-plus-sign icon-large"></i>
+              </div>
+              <input type="email" name="email" placeholder="Enter Your Email Here...">
+  
+              <label>Message</label>
+              <textarea rows="4" type="text" name="message" placeholder="Tell us what's on your mind!"></textarea>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+
+      </div>
+
+
       <div class="container">
         <div class="hero-unit" id="what-is-zinstry">
           <h2>What is Zinstry?</h2>
@@ -184,7 +212,7 @@
         </div>
       </div>
       <!-- Example row of columns -->
-      <footer class="footer" style="background-color:#c2c2c2;">
+  <footer class="footer" id="foot">
     <div class="container">
         <div class="row">
             <div class="span2 offset2">
