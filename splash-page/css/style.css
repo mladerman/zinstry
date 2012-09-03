@@ -45,11 +45,18 @@ border-bottom: #AAA;
   padding:8px;
   padding-right:0px;
   background:#dddddd;
+
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 }
 
 #contact-button{
   position:absolute;
-  left:0em;
+  left:-.25em;
   font-size:26px;
 }
 
@@ -63,10 +70,46 @@ border-bottom: #AAA;
 }
 
 .collapsed{
-  overflow:visible;
+  overflow:hidden;
   width:1.5%;
 }
-/*div{
-	border:1px solid;
-}*/
+
+.question{
+  position:absolute;
+/*  min-height:100%;*/
+  width:2em;
+  min-height:100%;
+}
+
+.question>h3{
+  line-height:.7em;
+
+  -webkit-writing-mode:vertical-lr;
+  -moz-writing-mode:vertical-lr;
+  -moz-writing-mode:vertical-lr;
+  -ms-writing-mode:vertical-lr;
+  -o-writing-mode:vertical-lr;
+
+
+}
+
+.rotate {
+/* Safari */
+
+-webkit-transform: rotate(180deg);
+
+/* Firefox */
+-moz-transform: rotate(180deg);
+
+/* IE */
+-ms-transform: rotate(180deg);
+
+/* Opera */
+-o-transform: rotate(180deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+
+}
+
 

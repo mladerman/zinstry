@@ -30,13 +30,10 @@ function collapse(id,duration){
 		$("#contact").toggleClass("collapsed",duration);
 		$("#"+id).children().toggleClass("icon-minus-sign");
 		$("#"+id).children().toggleClass("icon-plus-sign");
+		$("#contact h3").toggle()
 	});
 
 }
-
-
-
-
 
 function spin(target){
 var opts = {
