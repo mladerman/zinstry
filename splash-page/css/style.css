@@ -14,8 +14,12 @@ html,body{
   color:#f0f0f0;
   text-shadow: black 0.1em 0.1em 0.2em;
   border-bottom:1px solid #3f3f3f;
+  position:relative;
+  z-index:3;
 
-  background:url(../img/happy_people.jpg) no-repeat center;
+
+  background:url(../img/temp-background.jpeg) no-repeat;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,9 +30,17 @@ html,body{
   border-radius: 0px;
 }
 
+
+
+#what-is-zinstry,#how-does-it-work,
+#our-community{
+  position:relative;
+  z-index:1;
+}
+
 #how-does-it-work{
   background:url(../img/bgnoise_lg.png);
-  
+
 }
 .nav-collapse{
 	float:right;
@@ -58,23 +70,25 @@ border-bottom: #AAA;
     margin-bottom:-40px;
 } 
 
+#foot{
+  background-color:#c2c2c2;
+
+}
+
 #contact{
   position:fixed;
-  top:20%;
-  right:0px;
+  right:0%;
+  bottom:-20px;
   z-index:100000;
-  border:3px solid #aaaaaa;
+  border:.3em solid #4288A3;
   border-right:0px;
   padding:8px;
   padding-right:0px;
-  background:#dddddd;
+  background:#5c8fa3;
 
 -webkit-border-top-left-radius: 10px;
--webkit-border-bottom-left-radius: 10px;
 -moz-border-radius-topleft: 10px;
--moz-border-radius-bottomleft: 10px;
 border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
 }
 
 #contact-button{
@@ -85,16 +99,11 @@ border-bottom-left-radius: 10px;
 
 #contact-button:hover{
   opacity:.7;
-
-}
-#foot{
-  background-color:#c2c2c2;
-
 }
 
 .collapsed{
   overflow:hidden;
-  width:1.5%;
+  height:5%;
 }
 
 .question{
@@ -104,34 +113,10 @@ border-bottom-left-radius: 10px;
   min-height:100%;
 }
 
-.question>h3{
-  line-height:.7em;
-
-  -webkit-writing-mode:vertical-lr;
-  -moz-writing-mode:vertical-lr;
-  -moz-writing-mode:vertical-lr;
-  -ms-writing-mode:vertical-lr;
-  -o-writing-mode:vertical-lr;
-
-
-}
-
-.rotate {
-/* Safari */
-
--webkit-transform: rotate(180deg);
-
-/* Firefox */
--moz-transform: rotate(180deg);
-
-/* IE */
--ms-transform: rotate(180deg);
-
-/* Opera */
--o-transform: rotate(180deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+#signup-main{
+  position:fixed;
+  z-index:2;
+  opacity:.9;
 
 }
 

@@ -7,22 +7,24 @@ $(document).ready(function(){
 
 scrolling("navbar");
 collapse("contact-button",500);
-spinz("contact-form")
+spinz("contact-form");
+collapse("cancel",500);
 
 
 
 });
 
-$("a.scroll").click(function() {
+// $("a.scroll").click(function() {
 	
-		var path = $(this).attr("id").split("_")[1];			
-		scrolling(path);
+// 		var path = $(this).attr("id").split("_")[1];			
+// 		scrolling(path);
 	
-	});
+// 	});
 
 function scrolling(id)
 {
-	$("html,body").animate({scrollTop: $("#" + id).offset().top - 60}, 1000);
+	
+	$("html,body").animate({scrollTop: $("#"+id).offset().top - 60}, 1000);
 }
 
 function collapse(id,duration){
@@ -30,7 +32,6 @@ function collapse(id,duration){
 		$("#contact").toggleClass("collapsed",duration)
 		$("#"+id).children().toggleClass("icon-minus-sign");
 		$("#"+id).children().toggleClass("icon-plus-sign");
-		$("#contact h3").toggle()
 	});
 
 }
